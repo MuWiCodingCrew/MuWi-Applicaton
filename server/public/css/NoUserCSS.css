@@ -1,0 +1,23 @@
+body {
+    background-image: url("/00_Medien/TestBG_NoUser.jpg");
+    background-repeat: no-repeat;
+    background-position: -25px -50px;
+	background-size: calc(100% + 50px);
+}
+
+.greetingsStranger{
+    margin: 8% auto;
+    background-color: white;
+    border-radius: 24px;
+    padding: 30px;
+    height: 420px;
+    width: 400px;
+}
+
+.mainGreeting{
+    margin-top: 12px;
+}
+
+.greetHeader{
+    font-size: 20px;
+}
