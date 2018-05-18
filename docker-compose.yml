@@ -2,10 +2,10 @@ version: '3'
 
 services:
   mysql-muwi:
-    image: mysql:8.0.2
+    image: mysql
       environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: muwi
+        MYSQL_ROOT_PASSWORD: password
+        MYSQL_DATABASE: muwi
     ports:
       - "3308:3308"
 
