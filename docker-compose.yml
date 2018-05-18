@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql-muwi:
+    image: mysql:8.0.2
+      environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: muwi
+    ports:
+      - "3308:3308"
+
+  mongo-muwi:
+    image: mongo
+    restart: always
+    ports:
+      - "27017:27017"
+
+  muwi-website:
+    build: .server
+    volumes:
+      - ./server:/usr/src/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mysql-muwi
+      - mongo-muwi
