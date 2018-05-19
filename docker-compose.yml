@@ -3,9 +3,9 @@ version: '3'
 services:
   mysql-muwi:
     image: mysql
-      environment:
-        MYSQL_ROOT_PASSWORD: password
-        MYSQL_DATABASE: muwi
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: muwi
     ports:
       - "3308:3308"
 
@@ -16,7 +16,7 @@ services:
       - "27017:27017"
 
   muwi-website:
-    build: .server
+    build: server
     volumes:
       - ./server:/usr/src/app
     ports:
