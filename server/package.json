@@ -1,34 +1,44 @@
 {
-  "name": "frontend_handlebars",
-  "version": "0.0.0",
-  "private": true,
+  "name": "muwi-application",
+  "version": "1.0.0",
+  "description": "Application of ze Godz",
+  "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "description": "Lucas_Merged_Bearbeitung",
-  "author": {
-    "name": "Tim"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuWiCodingCrew/MuWi-Application.git"
   },
+  "keywords": [
+    "Learning"
+  ],
+  "author": "Ricardo Rosinski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuWiCodingCrew/MuWi-Application/issues"
+  },
+  "homepage": "https://github.com/MuWiCodingCrew/MuWi-Application#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.15.0",
+    "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.0",
-    "debug": "^2.2.0",
-    "express": "^4.14.0",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
     "express-fileupload": "^0.4.0",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.6",
-    "express-validator": "^5.0.3",
+    "express-validator": "^5.2.0",
     "flash": "^1.1.0",
-    "mongodb": "^3.0.5",
-    "mongoose": "^5.0.11",
-    "morgan": "^1.7.0",
+    "mongodb": "^3.1.0-beta4",
+    "mongoose": "^5.1.1",
+    "morgan": "^1.9.0",
     "mysql": "^2.15.0",
-    "node-fpgrowth": "^1.0.0",
+    "node-fpgrowth": "^1.2.1",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "serve-favicon": "^2.3.0",
-    "underscore": "^1.8.3"
+    "serve-favicon": "^2.5.0",
+    "underscore": "^1.9.0"
   }
 }
